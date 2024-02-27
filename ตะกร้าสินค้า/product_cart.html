@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Shopping Cart Example</title>
+</head>
+<body>
+    <nav>
+        <h1>Donut</h1>
+        <!-- สร้าง Navbar ตามที่ต้องการ -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="products">
+        <div class="product">
+            <img src="img/p-1.png" alt="Product 1">
+            <h3>Product 1 - $10</h3>
+            <button class="add-to-cart" data-product-id="1" data-price="10">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="/img/p-2.png" alt="Product 2">
+            <h3>Product 2 - $20</h3>
+            <button class="add-to-cart" data-product-id="2" data-price="20">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="/img/p-3.png" alt="Product 3">
+            <h3>Product 3 - $30</h3>
+            <button class="add-to-cart" data-product-id="3" data-price="30">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="/img/p-4.png" alt="Product 4">
+            <h3>Product 4 - $40</h3>
+            <button class="add-to-cart" data-product-id="4" data-price="40">Add to Cart</button>
+        </div>   
+    </div>
+
+   <!-- จุดที่ปุ่มยืนยัน -->
+   <div id="cart">
+        <div>
+            <h2>Cart</h2> 
+            <p>No items in cart.</p>
+        </div>
+    </div>
+    <!-- ปุ่มยืนยันในใบเสร็จ -->
+    <button id="confirmButton">Confirm Purchase</button>
+    <script src="cart.js"></script>
+</body>
+</html>
